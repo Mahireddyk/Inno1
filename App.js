@@ -5,6 +5,7 @@ import SearchBar from './ComponentsInno/SearchBar';
 import FancyButton from './ComponentsInno/FancyButton';
 import FolderList from './ComponentsInno/FolderList';
 import FolderScreen from './ComponentsInno/FolderScreen';
+import CameraScreen from './ComponentsInno/CameraScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -60,6 +61,10 @@ const App = () => {
           name="Folder"
           component={FolderScreen}
         />
+        <Stack.Screen
+  name="CameraScreen"
+  component={CameraScreen}
+/>
       </Stack.Navigator>
     </NavigationContainer>
   );
